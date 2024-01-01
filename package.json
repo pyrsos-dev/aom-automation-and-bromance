@@ -1,0 +1,17 @@
+{
+  "name": "username_finder",
+  "version": "1.0.0",
+  "description": "Find files script: - Needs optimization, think about it.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "robotjs": "^0.6.0",
+    "screenshot-desktop": "^1.15.0",
+    "sharp": "^0.33.1",
+    "tesseract.js": "^5.0.4"
+  }
+}
