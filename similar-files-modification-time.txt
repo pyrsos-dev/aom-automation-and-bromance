@@ -1,31 +1,31 @@
-/home/nvt/Desktop/savegame_haki_og/rcx/Replay v2.8 @2023.12.31 210150.rcx                                
-/home/nvt/Desktop/savegame_skelo_og/rcx/Replay v2.8 @2023.12.31 200150.rcx
+./Desktop/savegame_haki_og/rcx/Replay v2.8 @2023.12.31 210150.rcx                                
+./Desktop/savegame_skelo_og/rcx/Replay v2.8 @2023.12.31 200150.rcx
 
-/home/nvt/Desktop/savegame_haki_og/rcx/Replay v2.8 @2023.12.02 011802.rcx
-/home/nvt/Desktop/savegame_skelo_og/rcx/Replay v2.8 @2023.12.02 001801.rcx
+./Desktop/savegame_haki_og/rcx/Replay v2.8 @2023.12.02 011802.rcx
+./Desktop/savegame_skelo_og/rcx/Replay v2.8 @2023.12.02 001801.rcx
 
-/home/nvt/Desktop/savegame_haki_og/rcx/Replay v2.8 @2023.12.06 003856.rcx
-/home/nvt/Desktop/savegame_skelo_og/rcx/Replay v2.8 @2023.12.05 233855.rcx
+./Desktop/savegame_haki_og/rcx/Replay v2.8 @2023.12.06 003856.rcx
+./Desktop/savegame_skelo_og/rcx/Replay v2.8 @2023.12.05 233855.rcx
 
-/home/nvt/Desktop/savegame_haki_og/rcx/Replay v2.8 @2023.12.05 225003.rcx
-/home/nvt/Desktop/savegame_skelo_og/rcx/Replay v2.8 @2023.12.05 215003.rcx
+./Desktop/savegame_haki_og/rcx/Replay v2.8 @2023.12.05 225003.rcx
+./Desktop/savegame_skelo_og/rcx/Replay v2.8 @2023.12.05 215003.rcx
 
-/home/nvt/Desktop/savegame_haki_og/rcx/Replay v2.8 @2023.12.18 003154.rcx
-/home/nvt/Desktop/savegame_skelo_og/rcx/Replay v2.8 @2023.12.17 233411.rcx
+./Desktop/savegame_haki_og/rcx/Replay v2.8 @2023.12.18 003154.rcx
+./Desktop/savegame_skelo_og/rcx/Replay v2.8 @2023.12.17 233411.rcx
 
-/home/nvt/Desktop/savegame_haki_og/rcx/Replay v2.8 @2023.07.13 171923.rcx
-/home/nvt/Desktop/savegame_skelo_og/rcx/Replay v2.8 @2023.07.13 184351.rcx
+./Desktop/savegame_haki_og/rcx/Replay v2.8 @2023.07.13 171923.rcx
+./Desktop/savegame_skelo_og/rcx/Replay v2.8 @2023.07.13 184351.rcx
 
-/home/nvt/Desktop/savegame_haki_og/rcx/Replay v2.8 @2023.09.13 004102.rcx
-/home/nvt/Desktop/savegame_skelo_og/rcx/Replay v2.8 @2023.09.12 234102.rcx
+./Desktop/savegame_haki_og/rcx/Replay v2.8 @2023.09.13 004102.rcx
+./Desktop/savegame_skelo_og/rcx/Replay v2.8 @2023.09.12 234102.rcx
 
-/home/nvt/Desktop/savegame_haki_og/rcx/Replay v2.8 @2023.09.13 010419.rcx
-/home/nvt/Desktop/savegame_skelo_og/rcx/Replay v2.8 @2023.09.13 000419.rcx
+./Desktop/savegame_haki_og/rcx/Replay v2.8 @2023.09.13 010419.rcx
+./Desktop/savegame_skelo_og/rcx/Replay v2.8 @2023.09.13 000419.rcx
 
-/home/nvt/Desktop/savegame_haki_og/rcx/Replay v2.8 @2023.09.13 005359.rcx
-/home/nvt/Desktop/savegame_skelo_og/rcx/Replay v2.8 @2023.09.12 235359.rcx
+./Desktop/savegame_haki_og/rcx/Replay v2.8 @2023.09.13 005359.rcx
+./Desktop/savegame_skelo_og/rcx/Replay v2.8 @2023.09.12 235359.rcx
 
-/home/nvt/Desktop/savegame_haki_og/rcx/Replay v2.8 @2023.10.04 002937.rcx
-/home/nvt/Desktop/savegame_skelo_og/rcx/Replay v2.8 @2023.10.03 232937.rcx
+./Desktop/savegame_haki_og/rcx/Replay v2.8 @2023.10.04 002937.rcx
+./Desktop/savegame_skelo_og/rcx/Replay v2.8 @2023.10.03 232937.rcx
 
 

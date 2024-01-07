@@ -1,6 +1,6 @@
 /** 
- *  This a custom JS script that immitates a struggling baboon looking 
- *  across hundrends of games to find the one time in his life that he won.
+ *  Employing a robot to help a struggling baboon archive
+ *  hundrends of games against other struggling baboons.
  * 
  *  Helper functions:
  *  - Find current cursor position: eval $(xdotool getmouselocation --shell) and then print it: echo $X $Y
@@ -34,7 +34,9 @@ function extractDateTimeComponents(inputString) {
 function moveCursorToTextInputAndTypeRecordingName(recordingName) {
     console.log("...Moving cursor to text input and typing recording name...")
     
-    robot.moveMouse(816, 699)
+    const TEXT_INPUT_LOCATION = [816, 699]
+
+    robot.moveMouse(TEXT_INPUT_LOCATION[0], TEXT_INPUT_LOCATION[1])
     robot.mouseClick()
 
     const dateTimeComponents = extractDateTimeComponents(recordingName)
@@ -82,21 +84,28 @@ function moveCursorToTextInputAndTypeRecordingName(recordingName) {
 function openTheRecording() {
     console.log("...Opening the recording...")
 
-    robot.moveMouse(906, 753)
+    const OPEN_RECORDING_BUTTON_LOCATION = [906, 753]
+
+    robot.moveMouse(OPEN_RECORDING_BUTTON_LOCATION[0], OPEN_RECORDING_BUTTON_LOCATION[1])
     robot.mouseClick()
 }
 
 function openTheDropdownMenuWithUsernames() {
     console.log("...Opening the dropdown...")
 
-    robot.moveMouse(622, 908)
+    const DROPDOWN_MENU_LOCATION = [622, 908]
+
+    robot.moveMouse(DROPDOWN_MENU_LOCATION[0], DROPDOWN_MENU_LOCATION[1])
     robot.mouseClick()
 }
 
 async function cropScreenshotTaken() {
+    const SCREENSHOT_LOCATION = [622, 908]
+    const SCREENSHOT_SIZE = [180, 80]
+
     try {
         await sharp('shot.jpg')
-            .extract({ left: 533, top: 923, width: 180, height: 80 })
+            .extract({ left: SCREENSHOT_LOCATION[0], top: SCREENSHOT_LOCATION[1], width: SCREENSHOT_SIZE[0], height: SCREENSHOT_SIZE[1] })
             .toFile('shot2.jpg');
         
         console.log('...Image cropped and saved successfully.');
@@ -127,22 +136,25 @@ async function tesseractRecognizeUsernamesInScreenshot() {
     }
 }
 
-function moveRecordingToFolderForThoseUserMatches(usernamesRecognized) {
+function moveRecordingToFolderForThoseUserMatches(recordingName, usernamesRecognized) {
     // It gets text input like this 'Haki Terror\nSkelo\n' and returns this 'Haki Terror-Skelo'
     const usernames = usernamesRecognized.split('\n')
     const matchesFolderName = usernames[0] + '-' + usernames[1]
 
-    console.log(`...Moving matches to folder: ${matchesFolderName} 🟢 `)
-    // TODO 🙂
+    console.log(`...Moving ${recordingName} to folder: ${matchesFolderName} 🟢 `)
+    // TODO, archiving policy yet to be defined
 }
 
 function openWindowToWatchAnotherRecording() {
     console.log("...Opening new window to watch another recording...\n")
+    
+    const MENU_LOCATION = [1533, 138] 
+    const RECORDED_GAMES_BUTTON_LOCATION = [895, 561]
 
-    robot.moveMouse(1533, 138)
+    robot.moveMouse(MENU_LOCATION[0], MENU_LOCATION[1])
     robot.mouseClick()
 
-    robot.moveMouse(895, 561)
+    robot.moveMouse(RECORDED_GAMES_BUTTON_LOCATION[0], RECORDED_GAMES_BUTTON_LOCATION[1])
     robot.mouseClick()
 }
 
@@ -152,7 +164,7 @@ async function automateRecordingArchivalProcess(recordingName) {
     openTheDropdownMenuWithUsernames();
     await takeScreenshotAndCropUsernamesPart();
     const usernamesRecognized = await tesseractRecognizeUsernamesInScreenshot();
-    moveRecordingToFolderForThoseUserMatches(usernamesRecognized);
+    moveRecordingToFolderForThoseUserMatches(recordingName, usernamesRecognized);
     openWindowToWatchAnotherRecording();
 }
 
