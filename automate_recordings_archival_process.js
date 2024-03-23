@@ -110,7 +110,7 @@ async function cropScreenshotTaken() {
         
         console.log('...Image cropped and saved successfully.');
     } catch (error) {
-        console.error('Error:', error);
+        console.error('Error in cropping screenshot taken:', error);
     }
 }
  
@@ -121,7 +121,7 @@ async function takeScreenshotAndCropUsernamesPart() {
         await screenshot({ filename: 'shot.jpg' })
         await cropScreenshotTaken()
     } catch(error) {
-        console.log('Error', error)
+        console.log('Error in taking screenshot', error)
     }
 }
 
